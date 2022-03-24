@@ -1,12 +1,11 @@
 import scrapy
 
-
 class QuotesSpider(scrapy.Spider):
-    name = "spellburst"
+    name = "imagefromhome"
 
     def start_requests(self):
         urls = [
-            'https://leagueoflegends.fandom.com/wiki/Spell_(Legends_of_Runeterra)/Burst',
+            'https://playruneterra.com/vi-vn/news/game-updates/patch-3-2-0-notes/',
         ]
         for url in urls:
             yield scrapy.Request(url=url, callback=self.parse)
