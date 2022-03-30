@@ -43,3 +43,6 @@ class QuotesSpider(scrapy.Spider):
         print(all_href)
         print("\n\n\n")
         print(all_guardian + "]")
+
+
+        
